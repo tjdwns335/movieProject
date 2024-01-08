@@ -34,13 +34,18 @@ fetch(`${apiUrl}&api_key=${apiKey}`, options)
 
       let searchBtn = document.querySelector('#search-btn');
       let inputValue = document.querySelector('#input_id').value;
+
       searchBtn.addEventListener('click', function () {
-        if (inputValue === movieId) {
+        if (inputValue === title) {
           document.querySelector('#card-container').removeClass('hidden');
         }else{
           document.querySelector('#card-container').addClass('hidden');
         }
-      })
+      });
+
+      cardId.addEventListener('click', function () {
+        alert(`Id: ${movieId}`);
+      });
     });
   })
   .catch(err => console.error(err));
