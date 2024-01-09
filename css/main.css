@@ -50,13 +50,13 @@ body {
 }
 
 #card {
-  height: 3200px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .card-content {
   width: 250px;
   height: 750px;
-  float: left;
   margin-right: 62.5px;
   margin-bottom: 50px;
   background-color: #fff;
