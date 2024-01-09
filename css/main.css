@@ -24,25 +24,25 @@ body {
   line-height: 100px;
 }
 
-#head .form-area{
+#head #form-area{
   width: 100%;
   height: 50px;
   line-height: 50px;
 }
-#head .form-area label{
+#head #form-area label{
   margin-right: 7px;
 }
-#head .form-area button{
+#head #form-area button{
   width: 50px;
   height: 30px;
 }
-#head .form-area input{
+#head #form-area input{
   width: 250px;
   height: 30px;
   margin-right: 10px;
 }
 
-#head .form-area+hr{ margin-bottom: 50px; }
+#head #form-area+hr{ margin-bottom: 50px; }
 
 #card, .card-container{
   height: auto;
@@ -52,9 +52,9 @@ body {
 }
 .card-content{
   width: 250px;
-  height: 600px;
+  height: 750px;
   float: left;
-  margin-right: 62.5px;
+  margin-right: 50px;
   margin-bottom: 50px;
   background-color: #fff;
   text-align: center;

@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie project</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script type="module" src="./js/main2.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Movie project</title>
-  <link rel="stylesheet" href="./css/main.css">
-  <script src="./js/main.js"></script>
-</head>
-
-<body>
-  <div id="head">
-    <h1>Movie Project</h1>
-    <hr>
-    <div class="form-area">
-      <label for="search">영화 검색</label>
-      <input type="text" id="input_id" name="search" placeholder="검색어를 입력하세요">
-      <button type="submit" id="search-btn">검색</button>
+  <body>
+    <div id="head">
+      <h1>Movie Project</h1>
+      <hr />
+      <form id="form-area">
+        <label for="search">영화 검색</label>
+        <input
+          type="text"
+          id="input_search"
+          name="search"
+          placeholder="검색어를 입력하세요"
+        />
+        <button type="submit" id="search-btn">검색</button>
+      </form>
+      <hr />
     </div>
-    <hr>
-  </div>
 
-  <div id="card">
-    <!-- <div class="card-container" id="card-container">
+    <div id="card">
+      <!-- <div class="card-container" id="card-container">
       <div class="card-content">
         <img src="https://media.bunjang.co.kr/product/107446052_1_1661554444_w360.jpg" alt="test">
         <h3>test</h3>
@@ -33,7 +37,6 @@
         </p>
       </div>
     </div> -->
-  </div>
-</body>
-
+    </div>
+  </body>
 </html>
