@@ -3,8 +3,8 @@ export const generateMovieCards = async () => {
 
   const card = document.querySelector('#card');
   card.innerHTML = movies.map((movie) => `
-<div class="card-container" id=${movie.id}>
-          <div class="card-content">
+<div class="card-container" >
+          <div class="card-content" id=${movie.id}>
             <img src= https://image.tmdb.org/t/p/w500/${movie.poster_path} alt="${movie.title}">
             <h3 class="card-title">${movie.title}</h3>
             <p>${movie.overview}</p>
@@ -17,10 +17,9 @@ export const generateMovieCards = async () => {
 card.addEventListener("click", handleClickCard);
 
 function handleClickCard({ target }) {
-  const cardContainer = document.querySelector('.card-content');
   if (target === card) return;
 
-  if (target.matches('.card-container')) {
+  if (target.matches('.card-content')) {
     alert(`영화 id: ${target.id}`);
   } else {
     alert(`영화 id: ${target.parentNode.id}`);
