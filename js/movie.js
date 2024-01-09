@@ -3,14 +3,12 @@ export const generateMovieCards = async () => {
 
   const card = document.querySelector('#card');
   card.innerHTML = movies.map((movie) => `
-        <div class="card-container">
           <div class="card-content"id=${movie.id}>
             <img src= https://image.tmdb.org/t/p/w500/${movie.poster_path} alt="${movie.title}">
             <h3 class="card-title">${movie.title}</h3>
             <p>${movie.overview}</p>
             <p>Rating: ${movie.vote_average}</p>
-          </div>
-        </div>`).join('');
+          </div>`).join('');
 }
 
 

@@ -49,12 +49,11 @@ body {
   margin-bottom: 50px;
 }
 
-#card,
-.card-container {
-  height: max-content;
+#card {
+  height: 3200px;
 }
 
-.card-container {
+.card-content {
   width: 250px;
   height: 750px;
   float: left;
@@ -81,8 +80,6 @@ body {
   margin-bottom: 5px;
 }
 
-#card .card-container:nth-child(5n) {
+#card .card-content:nth-child(5n) {
   margin-right: 0;
 }
-
-.hidden {}
