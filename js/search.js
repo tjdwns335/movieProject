@@ -1,8 +1,8 @@
 export const handleSearch = (searchKeyword) => {
-  const movieCards = document.querySelectorAll(".movie-card");
+  const movieCards = document.querySelectorAll(".card-container");
 
   movieCards.forEach((card) => {
-    const title = card.querySelector(".movie-title").textContent.toLowerCase();
+    const title = card.querySelector(".card-title").textContent.toLowerCase();
     const searchedValue = searchKeyword.toLowerCase();
 
     if (title.includes(searchedValue)) {
